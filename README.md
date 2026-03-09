@@ -18,6 +18,24 @@ This project simulates the core backend of the **Mentora platform**, including a
 
 ---
 
+## API Overview
+
+| Method | Endpoint | Description |
+|------|------|------|
+POST | /auth/signup | Register parent or mentor |
+POST | /auth/login | Login and receive JWT |
+GET | /auth/me | Get current authenticated user |
+POST | /students | Create student (Parent only) |
+GET | /students | Get students of parent |
+POST | /lessons | Create lesson (Mentor only) |
+GET | /lessons | Get all lessons |
+POST | /bookings | Assign student to lesson |
+POST | /sessions | Create session for lesson |
+GET | /sessions/lesson/:id | Get sessions of lesson |
+POST | /sessions/:id/join | Student joins session |
+POST | /llm/summarize | Summarize text using LLM |
+
+---
 # Project Structure
 
 ```
@@ -80,6 +98,29 @@ Parent → Student → Booking → Lesson → Sessions
                         Mentor
 ```
 
+---
+
+
+## Database Design
+
+The platform uses PostgreSQL with the following core tables:
+
+- users
+- students
+- lessons
+- bookings
+- sessions
+- session_participants
+
+Relationships:
+
+Parent → Students  
+Students → Bookings  
+Bookings → Lessons  
+Lessons → Sessions  
+Sessions → Participants
+
+This relational structure ensures proper ownership and access control across users.
 ---
 
 # Setup Instructions
@@ -366,6 +407,26 @@ Response:
 
 The endpoint calls the **Google Gemini API** to summarize the text.
 
+### Example Test Request
+
+POST /llm/summarize
+
+Request Body
+
+{
+"text": "Artificial intelligence is transforming industries by enabling automation, improving decision-making through data analytics, and enhancing user experiences."
+}
+
+Example Response
+
+{
+ "summary": "• AI enables automation  
+ • Improves decision-making through data analytics  
+ • Enhances personalized user experiences  
+ • Drives efficiency and innovation",
+ "model": "gemini-2.5-flash"
+}
+
 ---
 
 # Validation Rules
@@ -410,6 +471,21 @@ This prevents abuse of the API.
 
 ---
 
+## Health Check
+
+The API includes a simple health check endpoint.
+
+GET /health
+
+Response
+
+{
+ "status": "ok",
+ "service": "mentora-backend"
+}
+
+---
+
 # Future Improvements
 
 Possible enhancements for production:
@@ -422,11 +498,29 @@ Possible enhancements for production:
 
 ---
 
-# Author
+## Author
 
-Suhail Rajput
+**Suhail Rajput**  
+Computer Science Graduate | Backend Developer
 
-Computer Science Student
-Backend Developer
+🌐 **Portfolio:** [View Portfolio](https://suhail-8800.github.io/suhail_rajput_portfolio)
+
+📄 **Resume:** [View Resume](https://drive.google.com/file/d/1gd9Cab4OrcDCsDucHhca75TXT_3aBlSG/view)
+
+🔗 **LinkedIn:**  
+https://www.linkedin.com/in/suhail-rajput-64158722b/
+
+📧 **Email:**  
+suhailrajput325@gmail.com  
+
+📱 **Contact Number:**  
++91 9368056263  
+
+💻 **GitHub:**  
+https://github.com/Suhail-8800
+
+---
+
+If you have any questions regarding the implementation or need clarification about the project setup, feel free to reach out.
 
 ---
