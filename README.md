@@ -74,6 +74,8 @@ mentora-backend
 │
 ├── server.js
 ├── package.json
+├── package-lock.json
+├── .gitignore
 ├── .env
 └── README.md
 ```
