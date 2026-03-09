@@ -1,4 +1,4 @@
-# Mentora Backend Assignment
+# Mentora Backend
 
 A simplified backend for a mentorship platform where **parents, students, and mentors interact** through lessons and sessions.
 
