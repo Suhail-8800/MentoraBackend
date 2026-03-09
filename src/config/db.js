@@ -11,10 +11,10 @@ const pool = new Pool({
 
 pool.connect()
   .then(() => {
-    console.log("✅ PostgreSQL connected successfully");
+    console.log("PostgreSQL connected successfully");
   })
   .catch((err) => {
-    console.error("❌ Database connection failed:", err.message);
+    console.error("Database connection failed:", err.message);
   });
 
 module.exports = pool;
