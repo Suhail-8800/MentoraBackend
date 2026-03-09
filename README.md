@@ -128,7 +128,7 @@ This relational structure ensures proper ownership and access control across use
 ## 1. Clone Repository
 
 ```
-git clone https://github.com/YOUR_USERNAME/mentora-backend.git
+git clone https://github.com/Suhail-8800/MentoraBackend.git
 cd mentora-backend
 ```
 
@@ -160,7 +160,7 @@ JWT_SECRET=your_jwt_secret
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-**Important:** Never commit `.env` to GitHub.
+**Remember:** Never commit `.env` to GitHub because it keeps the secret information.
 
 ---
 
@@ -507,17 +507,13 @@ Computer Science Graduate | Backend Developer
 
 📄 **Resume:** [View Resume](https://drive.google.com/file/d/1gd9Cab4OrcDCsDucHhca75TXT_3aBlSG/view)
 
-🔗 **LinkedIn:**  
-https://www.linkedin.com/in/suhail-rajput-64158722b/
+🔗 **LinkedIn:** : https://www.linkedin.com/in/suhail-rajput-64158722b/
 
-📧 **Email:**  
-suhailrajput325@gmail.com  
+📧 **Email:** : suhailrajput325@gmail.com
 
-📱 **Contact Number:**  
-+91 9368056263  
+📱 **Contact Number:** : +91 9368056263  
 
-💻 **GitHub:**  
-https://github.com/Suhail-8800
+💻 **GitHub:** : https://github.com/Suhail-8800
 
 ---
 
