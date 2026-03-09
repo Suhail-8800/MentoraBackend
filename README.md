@@ -129,7 +129,7 @@ This relational structure ensures proper ownership and access control across use
 
 ```
 git clone https://github.com/Suhail-8800/MentoraBackend.git
-cd mentora-backend
+cd MentoraBackend
 ```
 
 ---
@@ -507,13 +507,13 @@ Computer Science Graduate | Backend Developer
 
 📄 **Resume:** [View Resume](https://drive.google.com/file/d/1gd9Cab4OrcDCsDucHhca75TXT_3aBlSG/view)
 
-🔗 **LinkedIn:** : https://www.linkedin.com/in/suhail-rajput-64158722b/
+🔗 **LinkedIn:** https://www.linkedin.com/in/suhail-rajput-64158722b/
 
-📧 **Email:** : suhailrajput325@gmail.com
+📧 **Email:** suhailrajput325@gmail.com
 
-📱 **Contact Number:** : +91 9368056263  
+📱 **Contact Number:** +91 9368056263  
 
-💻 **GitHub:** : https://github.com/Suhail-8800
+💻 **GitHub:** https://github.com/Suhail-8800
 
 ---
 
